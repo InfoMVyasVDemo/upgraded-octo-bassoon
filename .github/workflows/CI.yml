@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: dump github context
-        run: echo '${{ toJSON(github.event) }} | jq
+        run: echo '${{ toJSON(github.event) }}' | jq
         shell: bash
       - name: Run a one-line script
         run: echo Hello, world!
